@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>Hello, world!</title>
+    </head>
+
+    <body>
+      <div class="alert alert-primary" role="alert">
+        <span class="badge bg-secondary">説明</span>
+        横に２カラム並んでいるが、スマホサイズになるとタブ表記になる。その後タブで画面を切り替える。簡単なフォームとフォームを加工した結果を表示するページに最適
+      </div>
+        <!--
+          ####################### 追加分 ここから####################################
+        -->
+      <div class="container" style="border: 1px solid #666">
+        <!--- タブstart --->
+        <div class="row d-sm-none">
+          <div id="formTab" class="btn col text-primary">フォーム</div>
+          <div id="resultTab" class="btn col">結果</div>
+        </div>
+        <!--- タブend --->
+        <div class="row">
+          <!-- 左フォーム -->
+          <div id="form" class="col-md-6 p-3">
+            左フォーム本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </div>
+          <!-- 右フォーム -->
+          <div id="result" class="col-md-6 p-3 d-sm-block d-none">
+            右フォーム本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </div>
+        </div>
+      </div>
+        <!--
+          ####################### 追加分 ここまで####################################
+        -->
+
+        <!-- jQuery first, then Bootstrap JS, then Avant UI -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--
+          ####################### 追加分 ####################################
+        -->
+        <script>
+          $("#formTab").click(() => {
+            $("#form").toggleClass('d-none d-sm-block')
+            $("#result").toggleClass('d-none d-sm-block')
+            $("#formTab").toggleClass('text-primary')
+            $("#resultTab").toggleClass('text-primary')
+          })
+          $("#resultTab").click(() => {
+            $("#form").toggleClass('d-none d-sm-block')
+            $("#result").toggleClass('d-none d-sm-block')
+            $("#formTab").toggleClass('text-primary')
+            $("#resultTab").toggleClass('text-primary')
+          })
+
+
+        </script>
+    </body>
+</html>
