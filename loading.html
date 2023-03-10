@@ -39,6 +39,8 @@
         -->
         <script>
           $("#formTab").click(() => {
+            const height = document.body.offsetHeight
+            document.getElementById('loading').style.height = `${height}px`
             $("#loading").toggleClass('d-none')
           })
 
