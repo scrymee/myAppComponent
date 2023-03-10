@@ -1,0 +1,38 @@
+:root {
+    --main-black: #313F44;
+    --main-blue: #3F51B5;
+    --main-red: #EC4079;
+
+
+    --color-main: var(--main-black);
+    --color-sub: var(--main-blue);
+    --color-accent: var(--main-red);
+
+}
+
+
+
+body {
+    font-family: -apple-system, Segoe UI, Helvetica Neue, Hiragino Kaku Gothic ProN, "メイリオ", meiryo, sans-serif;
+    color: var(--color-main);
+}
+
+h1 {
+    text-align: center;
+    padding: 0.5rem 0rem;
+    color: var(--main-color);
+    border-bottom: 2px dashed;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+h3 {
+    padding: 0.25em 0.5em 0.25rem 1.2rem;
+    /*上下 左右の余白*/
+    color: var(--main-color);
+    background: transparent;
+    /*背景透明に*/
+    border-left: solid 10px var(--main-black);
+    /*左線*/
+    font-size: 1.1rem;
+}
